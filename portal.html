@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="mobile.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oregano&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 60%;
+      overflow: auto;
+    }
+
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    .sidebar a.active {
+      background-color: #003366;
+      color: white;
+    }
+
+    .sidebar a:hover:not(.active) {
+      background-color: #0059b3;
+      color: white;
+    }
+
+    .container {
+
+    }
+
+    .container input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .container input[type=submit] {
+      width: 30%;
+      background-color: #003366;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px auto;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    div.container {
+      width: 60%;
+      margin: 30px auto;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+      .container input[type=submit] {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <header>
+
+    <div class="top-navbar">
+      <div>
+
+        <div class="">
+          <a href="" class="">Calendar</a>
+        </div>
+
+        <div class="">
+          <a href="" class="">Contact us</a>
+        </div>
+
+        <div class="">
+          <i class="fa fa-search"></i>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="navbar">
+      <div class="navbar_link navbar_brand">
+        <img src="images/logo.png">
+        <a href=""><b>SACRED HEART <br><br><i class="fa fa-plus"></i> SCHOOL  <i class="fa fa-plus"></i></b></a>
+      </div>
+
+
+
+      <div class="navbar_link navbar_toggle">
+        <i>&#9776;</i>
+      </div>
+
+      <div class="nav_right">
+        <div>
+          <div class="top-nav nav_item">
+            <div class="navbar_link top-nav-phone">
+              <a href=""><i class="fa fa-phone" aria-hidden="true"></i>+234 (766) 5898</a>
+            </div>
+            <div class="navbar_link search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder='Search..' name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav_item">
+
+          <div class="navbar_link">
+            <a href="./about.html">About SHS            <i class="fa fa-angle-down"></i></a>
+          </div>
+          <div class="navbar_link">
+            <a href="./admission.html">Admissions            <i class="fa fa-angle-down"></i></a>
+          </div>
+          <div class="navbar_link">
+            <a href="./academics.html">Academics            <i class="fa fa-angle-down"></i></a>
+          </div>
+          <div class="navbar_link">
+            <a href="portal.html">Portal           <i class="fa fa-angle-down"></i></a>
+          </div>
+          <div class="navbar_link">
+            <a href="news.html">News            <i class="fa fa-angle-down"></i></a>
+          </div>
+          <div class="navbar_link">
+            <a href="">Events            <i class="fa fa-angle-down"></i></a>
+          </div>
+          
+        </nav>
+
+      </div>
+
+
+    </div>
+  </header>
+
+
+
+  <div class="sidebar">
+    <a class="active" href="#home">Profile</a>
+    <a href="#result">Check Result</a>
+    <a href="#contact">Parent</a>
+    <a href="#about">New Student</a>
+    <a href="">Returning Student</a>
+  </div>
+
+  <div class="container" id="result">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+
+
+
+  <!------ Footer Section ------>
+
+  <div class="schedule">
+    <h2>Schedule a visit at <br> Sacred Heart</h2>
+    <button>Schedule a Visit <i class="fa fa-angle-right"></i></button>
+
+  </div>
+
+  <div id="footer">
+    <div class="footer rows">
+
+      <div class="logo col-5">
+        <div class="footer-logo .col-4">
+          <img src="images/logo.png">
+        </div>
+
+      </div>
+
+      <div class="col-5">
+
+        <div class="footer_link"><a href="#."><span class="grey"> 9450 NE 14th Street</span></a></div>          
+        <div class="footer_link"><a href="#."><span class="grey"> Bellevue, Wa 98004</span></a></div>          
+        <div class="footer_link"><a href="#.">Direction <i class="fa fa-angle-right"></i> </a></div>          
+        <div class="footer_link"><a href="#."><span class="grey"> School office: </span>(425) 377-3675</a></div>          
+        <div class="footer_link"><a href="#."><span class="grey"> Fax: (425) 377-3675</span></a></div>
+        <div class="footer_link"><a href="#.">Contact us <i class="fa fa-angle-right"></i></div>
+
+        </div>
+
+        <div class="col-5 col-5-empty">
+          <div class="">
+
+            <div class="footer_link"><a href="#."></a></div>          
+            <div class="footer_link"><a href="#."></a></div>          
+            <div class="footer_link"><a href="#."></a></div>          
+            <div class="footer_link"><a href="#."></a></div>          
+            <div class="footer_link"><a href="#."></a></div>
+            <div class="footer_link"><a href="#."></a></div>         
+          </div>
+
+        </div>
+
+
+        <div class="col-5">
+
+          <div class="footer_link"><a href="#.">About Us</a></div>          
+          <div class="footer_link"><a href="#.">Admissions</a></div>          
+          <div class="footer_link"><a href="#.">Academics</a></div> 
+          <div class="footer_link"><a href="#.">Parents/Students</a></div>           
+          <div class="footer_link"><a href="#.">Giving </a></div> 
+          <div class="footer_link"><a href="#.">Quick Links</a></div>
+
+        </div>
+
+        <div class="col-5">
+          <div class="footer_link"><a href="#.">Calendar & Schedule</a></div>          
+          <div class="footer_link"><a href="#.">Clever</a></div>          
+          <div class="footer_link"><a href="#.">Staff</a></div>          
+          <div class="footer_link"><a href="#.">Library Catalog</a></div>          
+          <div class="footer_link"><a href="#.">_</a></div>
+          <div class="footer_link"><a href="#." style="display: flex;"><img src="images/facebook.png">Facebook</a></div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </body>
+
+
+  <script type="text/javascript">
+    function classToggle() {
+      const navs = document.querySelectorAll('.nav_item')
+
+      navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+    }
+
+    document.querySelector('.navbar_toggle')
+    .addEventListener('click', classToggle);
+  </script>
+
+
+
+  </html>

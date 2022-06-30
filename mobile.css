@@ -1,0 +1,108 @@
+@media only screen and (max-width: 780px) {
+  .nav_item,
+  .navbar {
+    flex-direction: column;
+  }
+  .nav_item {
+  	display: none;
+  }
+  .nav_right {
+    margin: auto;
+  }
+  .navbar_toggle {
+  	display: initial;
+  	align-self: flex-end;
+  	position: absolute;
+  	cursor: pointer;
+    color: #000099;
+  }
+  .Navbar__ToggleShow {
+  	display: flex;
+  } 
+  .main-footer {
+    display: block;
+  }
+}
+
+ @media only screen and (max-width: 900px) {
+      ._row {
+        display: block;
+      }
+      ._col {
+        width: 95%;
+      }
+    }
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+
+}
+@media only screen and (max-width: 420px) {
+  .link {
+    display: none;
+  }
+  .sub-link {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+
+  }
+  .sub-link button {
+  background-color: #000099;
+  border-radius: 25px;
+  margin: auto;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+}
+
+#grid-section {
+  padding-top: 20px;
+}
+.flip-section {
+  padding: 40px 10px;
+}
+.carousel  {
+  width: 90%;
+}
+.top-navbar .fa-search {
+  display: block;
+  align-self: flex-end;
+  margin-left: 30px;
+}
+
+}
+
+/*-----Other Pages */
+@media screen and (max-width: 800px) {
+  .rightcolumn, .leftcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+/*-----  Footer Section  --------*/
+
+@media only screen and (max-width: 768px) {
+      .schedule {
+      padding: 10px;
+      }
+      .schedule br {
+        display: block;
+      }
+      .footer {
+        display: block;
+      }
+      #footer {
+        padding: 10px;
+      }
+      .col-5-empty {
+        display: none;
+      }
+      .col-5 {
+        margin-bottom: 20px;
+      }
+    }
